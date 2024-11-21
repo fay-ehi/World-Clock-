@@ -1,0 +1,53 @@
+body {
+  background-color: darkgrey;
+  font-family: sans-serif;
+}
+h1 {
+  text-align: center;
+}
+
+select {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  font-size: medium;
+}
+h2 {
+  margin: 0 0 5px;
+  font-size: 30px;
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: lightgray;
+  padding: 30px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  border-radius: 15px;
+  box-shadow: 6px 6px rgb(62, 81, 87);
+}
+.city {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+  border-bottom: 1px grey dashed;
+  padding: 15px 0;
+}
+.city:last-child {
+  border-bottom: none;
+}
+.date {
+  opacity: 70%;
+}
+
+.time {
+  font-size: 40px;
+  font-weight: bold;
+}
+.time small {
+  font-size: 20px;
+  vertical-align: middle;
+}
+footer {
+  text-align: center;
+}
