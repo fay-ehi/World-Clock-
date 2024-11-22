@@ -26,6 +26,20 @@ function updateTime() {
       .format("H:mm:ss [<small>] A [</small>]");
     londonTimeElement.innerHTML = londonTime;
   }
+
+  //Nairobi
+  let nairobiElement = document.querySelector("#nairobi");
+  if (nairobiElement) {
+    let nairobiDateElement = nairobiElement.querySelector(".date");
+    let nairobiDate = moment().tz("Africa/Nairobi").format("MMMM Do YYYY");
+    nairobiDateElement.innerHTML = nairobiDate;
+
+    let nairobiTimeElement = nairobiElement.querySelector(".time");
+    let nairobiTime = moment()
+      .tz("Africa/Nairobi")
+      .format("H:mm:ss [<small>] A [</small>]");
+    nairobiTimeElement.innerHTML = nairobiTime;
+  }
 }
 
 updateTime();
@@ -47,9 +61,8 @@ function updateCity(event) {
           <div class="time"> ${cityTime.format(
             "H:mm:ss"
           )}<small> ${cityTime.format("A")}</small></div>
-        </div>`;
-  let allCity = document.querySelector("#refresh");
-  allCity.innerHTML = `<a href="https://fay-world-clock.netlify.app/">All cities</a>`;
+        </div> 
+        <a href="/">All cities</a>`;
 }
 let citySelectElement = document.querySelector("#city");
 citySelectElement.addEventListener("change", updateCity);
