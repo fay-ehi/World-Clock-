@@ -48,6 +48,8 @@ function updateCity(event) {
             "H:mm:ss"
           )}<small> ${cityTime.format("A")}</small></div>
         </div>`;
+  let allCity = document.querySelector("#refresh");
+  allCity.innerHTML = `<a href="https://fay-world-clock.netlify.app/">All cities</a>`;
 }
 let citySelectElement = document.querySelector("#city");
 citySelectElement.addEventListener("change", updateCity);

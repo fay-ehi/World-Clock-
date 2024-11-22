@@ -48,6 +48,11 @@ small {
   font-size: 20px;
   vertical-align: middle;
 }
+.refresh {
+  border-top: 1px dashed gray;
+  padding-top: 10px;
+}
+
 footer {
   text-align: center;
 }
