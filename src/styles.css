@@ -1,6 +1,7 @@
 body {
-  background-color: darkgrey;
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/151/189/original/map__image.png?1732315377");
   font-family: sans-serif;
+  background-size: cover;
 }
 h1 {
   text-align: center;
@@ -9,8 +10,10 @@ h1 {
 select {
   display: block;
   width: 100%;
-  padding: 5px;
+  padding: 8px;
+  border-radius: 4px;
   font-size: medium;
+  background-color: rgb(252, 249, 249);
 }
 h2 {
   margin: 0 0 5px;
@@ -19,12 +22,12 @@ h2 {
 .container {
   max-width: 600px;
   margin: 0 auto;
-  background-color: lightgray;
+  background-color: rgb(222, 222, 222);
   padding: 30px;
   margin-bottom: 30px;
   margin-top: 30px;
-  border-radius: 15px;
-  box-shadow: 6px 6px rgb(62, 81, 87);
+  border-radius: 10px;
+  box-shadow: rgba(6, 6, 16, 0.2) 0px 7px 23px 0px;
 }
 .city {
   display: flex;
